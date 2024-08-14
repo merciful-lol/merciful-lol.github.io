@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "mc";
+    src: url("../fonts/regular.otf") format("opentype");
+}
+
+.song-player-progress-bar {
+    width: 200px; 
+    height: 12px; 
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    margin: 10px auto;
+    border: 2px solid #fff; 
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.6); 
+    position: relative;
+}
+
+.song-player-progress-bar-fill {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.song-player-progress-bar-fill:hover {
+    opacity: 0.7;
+}
+
+.song-player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.song-player-controls button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px; 
+    cursor: pointer;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+
+.song-player-controls button:hover {
+    opacity: 0.7;
+}
+
+.song-player-time {
+    font-family: "mc";
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+}
