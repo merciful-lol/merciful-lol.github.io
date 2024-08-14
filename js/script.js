@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
         "../songs/1.mp3",
         "../songs/2.mp3",
         "../songs/3.mp4",
-        "../songs/4.mp4",
         "../songs/5.mp3",
         "../songs/6.mp3",
         "../songs/7.mp3",
