@@ -1,1 +1,169 @@
-@font-face{font-family:"mc";src:url("../fonts/regular.otf") format("opentype");}[class~=custom-cursor]{cursor:url("../images/cursor.png"),auto;}.profile-square{width:80vw;}.profile-square{max-width:4.6875in;}.profile-square{height:auto;}.profile-square{background-color:rgba(0,0,0,.95);}.profile-square{border-radius:20px;}body,[class~=profile-details-container],.profile-square,.social-button{display:flex;}.profile-square,[class~=profile-details-container]{flex-direction:column;}#rest-of-site{opacity:0;}.social-button,.profile-square,.social-content,[class~=profile-details-container]{align-items:center;}.profile-square{padding-left:1.25pc;}.profile-square{padding-bottom:1.25pc;}.profile-square{padding-right:1.25pc;}body{-webkit-user-select:none;}.profile-square{padding-top:1.25pc;}[class~=profile-icon]:hover{opacity:.7;}.profile-square{margin-left:auto;}.profile-square{margin-bottom:auto;}body{-moz-user-select:none;}.profile-square{margin-right:auto;}body{-ms-user-select:none;}.profile-square{margin-top:auto;}.profile-square{box-sizing:border-box;}[class~=profile-details-container]{width:100%;}body{user-select:none;}body{font-family:Arial,sans-serif;}body{margin-left:0;}[class~=profile-icon]{width:10pc;}[class~=profile-icon]{height:1.666666667in;}[class~=profile-icon]{border-radius:50%;}[class~=social-text],[class~=profile-name]{font-family:"mc";}body{margin-bottom:0;}[class~=profile-name]{background-color:rgba(255,255,255,.8);}[class~=profile-name],.social-button{color:#000;}body{margin-right:0;}[class~=profile-name]{padding-left:2.5pc;}[class~=profile-name]{padding-bottom:3.75pt;}[class~=profile-name]{padding-right:2.5pc;}[class~=profile-name]{padding-top:3.75pt;}.social-button,[class~=profile-name]{border-radius:.625pc;}[class~=profile-name]{font-size:18px;}body{margin-top:0;}body{padding-left:0;}.social-button{width:90%;}.social-button{height:37.5pt;}.social-button,body{padding-bottom:0;}.social-button{background-color:rgba(128,128,128,.8);}body{padding-right:0;}.social-button,body{padding-top:0;}body{background-color:#0f0f0f;}body{color:#fff;}.social-button{padding-left:7.5pt;}.social-button{padding-right:7.5pt;}#rest-of-site{transition:opacity 1s ease-in-out;}.social-button{margin-bottom:.625pc;}.social-icon{width:1.875pc;}.social-icon{height:30px;}[class~=profile-name]:hover{opacity:.7;}.social-icon{margin-right:.15625in;}.social-content,[class~=social-text]{flex:1;}.social-content{display:flex;}.social-content{border-left-width:.020833333in;}.social-content{border-left-style:solid;}body{justify-content:center;}body{align-items:center;}.social-content{border-left-color:#000;}.social-content{border-image:none;}.social-content{padding-left:7.5pt;}body{min-height:100vh;}[class~=social-text]{font-weight:bold;}[class~=social-text]{margin-left:.104166667in;}[class~=social-arrow-icon]{width:15pt;}[class~=social-arrow-icon]{height:20px;}body{background-size:cover;}#rest-of-site{display:none;}body{background-position:center;}body{background-repeat:no-repeat;}
+@font-face {
+    font-family: "mc";
+    src: url("../fonts/regular.otf") format("opentype");
+}
+
+html, body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; 
+    color: #fff; 
+    height: 100%;
+    width: 100%;
+    background: url('../images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    overflow: auto;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+#rest-of-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.custom-cursor {
+    cursor: url('../images/cursor.png'), auto;
+}
+
+.profile-square {
+    width: 80vw;
+    max-width: 450px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.80); 
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: auto;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+}
+
+.profile-details-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-icon-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-icon {
+    width: 160px; 
+    height: 160px; 
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.profile-icon:hover {
+    opacity: 0.7;
+}
+
+.profile-icon-frame {
+    width: 195px; 
+    height: 195px;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-name {
+    font-family: 'mc'; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #000; 
+    padding: 5px 40px;
+    border-radius: 10px; 
+    font-size: 18px; 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+
+.profile-name:hover {
+    opacity: 0.7;
+}
+
+.profile-description {
+    font-family: 'mc';
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #fff;
+    position: relative;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+
+.profile-description:hover {
+    opacity: 0.7;
+}
+
+.border-wrapper {
+    position: centered;
+    height: 4px; 
+    width: 16px;
+    background-color: #fff;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.social-button {
+    width: 90%; 
+    height: 50px; 
+    background-color: rgba(128, 128, 128, 0.8); 
+    color: #000; 
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+}
+
+.social-icon {
+    width: 30px; 
+    height: 30px;
+    margin-right: 15px;
+}
+
+.social-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-left: 2px solid #000; 
+    padding-left: 10px;
+}
+
+.social-text {
+    font-family: 'mc';
+    font-weight: bold;
+    margin-left: 10px;
+    flex: 1;
+}
+
+.social-arrow-icon {
+    width: 20px; 
+    height: 20px; 
+}

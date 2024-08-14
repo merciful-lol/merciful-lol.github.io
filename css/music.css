@@ -1,1 +1,57 @@
-@font-face{font-family:"mc";src:url("../fonts/regular.otf") format("opentype");}.song-player-progress-bar{width:200px;}.song-player-progress-bar{height:.125in;}[class~=song-player-controls] button{background-color:transparent;}.song-player-progress-bar{background-color:rgba(255,255,255,.2);}[class~=song-player-progress-bar-fill],.song-player-progress-bar{border-radius:.083333333in;}.song-player-progress-bar{margin-left:auto;}.song-player-progress-bar{margin-bottom:.625pc;}.song-player-progress-bar{margin-right:auto;}.song-player-progress-bar{margin-top:.625pc;}.song-player-progress-bar{border-left-width:1.5pt;}.song-player-progress-bar{border-bottom-width:1.5pt;}[class~=song-player-controls] button{border-left-width:medium;}[class~=song-player-controls] button{border-bottom-width:medium;}.song-player-progress-bar{border-right-width:1.5pt;}[class~=song-player-controls] button{border-right-width:medium;}.song-player-progress-bar{border-top-width:1.5pt;}[class~=song-player-controls] button{border-top-width:medium;}.song-player-progress-bar{border-left-style:solid;}.song-player-progress-bar{border-bottom-style:solid;}.song-player-progress-bar{border-right-style:solid;}[class~=song-player-controls] button{border-left-style:none;}.song-player-progress-bar{border-top-style:solid;}[class~=song-player-controls] button{border-bottom-style:none;}.song-player-progress-bar{border-left-color:#fff;}[class~=song-player-controls] button{border-right-style:none;}.song-player-progress-bar{border-bottom-color:#fff;}.song-player-progress-bar{border-right-color:#fff;}.song-player-progress-bar{border-top-color:#fff;}.song-player-progress-bar{border-image:none;}.song-player-progress-bar{box-shadow:0 0 0 .020833333in rgba(0,0,0,.6);}[class~=song-player-controls] button{border-top-style:none;}.song-player-progress-bar{position:relative;}.song-player-progress-bar{overflow:hidden;}[class~=song-player-progress-bar-fill]{height:100%;}[class~=song-player-progress-bar-fill]{background-color:#fff;}[class~=song-player-controls] button{border-left-color:currentColor;}[class~=song-player-progress-bar-fill]{width:0;}[class~=song-player-controls] button{border-bottom-color:currentColor;}[class~=song-player-progress-bar-fill]{position:absolute;}[class~=song-player-progress-bar-fill]{top:0;}[class~=song-player-progress-bar-fill]{left:0;}.song-player-controls{display:flex;}.song-player-controls{justify-content:center;}.song-player-controls{align-items:center;}.song-player-controls,[class~=song-player-time]{margin-top:10px;}[class~=song-player-time]{font-family:"mc";}[class~=song-player-time],[class~=song-player-controls] button{color:#fff;}[class~=song-player-controls] button{border-right-color:currentColor;}[class~=song-player-time]{text-align:center;}[class~=song-player-controls] button{border-top-color:currentColor;}[class~=song-player-controls] button{border-image:none;}[class~=song-player-controls] button{font-size:.208333333in;}[class~=song-player-controls] button{cursor:pointer;}[class~=song-player-controls] button{margin-left:.104166667in;}[class~=song-player-controls] button{margin-bottom:0;}[class~=song-player-controls] button{margin-right:.104166667in;}[class~=song-player-controls] button{margin-top:0;}[class~=song-player-controls] button:hover{opacity:.7;}
+@font-face {
+    font-family: "mc";
+    src: url("../fonts/regular.otf") format("opentype");
+}
+
+.song-player-progress-bar {
+    width: 200px; 
+    height: 12px; 
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    margin: 10px auto;
+    border: 2px solid #fff; 
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.6); 
+    position: relative;
+}
+
+.song-player-progress-bar-fill {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.song-player-progress-bar-fill:hover {
+    opacity: 0.7;
+}
+
+.song-player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.song-player-controls button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px; 
+    cursor: pointer;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+
+.song-player-controls button:hover {
+    opacity: 0.7;
+}
+
+.song-player-time {
+    font-family: "mc";
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+}
