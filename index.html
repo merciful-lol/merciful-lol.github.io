@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel=“canonical” href="https://centimeter.lol/"/>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://centimeter.lol">
+    <link rel="icon" href="./images/icon.gif" type="image/gif">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/styles.css">
@@ -10,29 +14,52 @@
     <link rel="stylesheet" href="./css/button.css">
     <link rel="stylesheet" href="./css/music.css">
     <link rel="icon" href="./images/icon.gif" type="image/gif">
+    <link rel="apple-touch-icon" href="./images/icon.gif">
     <meta property="og:image" content="./images/logo.png">
     <title>centimeter</title>
+    <meta name="theme-color" content="#00000">
     <meta property="og:title" content="centimeter">
     <meta property="og:description" content=":3">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://centimeter.lol">
+    <meta property="twitter:title" content="centimeter">
+    <meta property="twitter:description" content=":3">
+    <meta property="twitter:image" content="./images/icon.png">
 </head>
 <body id="site">
     <div class="custom-cursor">
-        <button class="glow-button" id="continue-button">CLICK TO CONTUNUE</button>
-        <div id="rest-of-site" class="fade-in" style="display: none;">
+        <div id="blur-container">
+            <div id="button">CLICK TO CONTINUE</div>
+        </div>
+        <div id="rest-of-site">
             <div class="profile-square">
                 <div class="profile-details-container">
-                    <img src="./images/logo.png" alt="centimeter" class="profile-icon">
+                    <div class="profile-icon-container">
+                        <img src="./images/frame.gif", class="profile-icon-frame">
+                        <img src="./images/logo.png", class="profile-icon">
+                    </div>
                     <br>
                     <div class="profile-name">CENTIMETER</div>
                     <br>
+                    <div class="profile-description">
+                        <span class="typed"></span>
+                        <span class="cursor"> |</span>
+                    </div>
+                    <div class="border-wrapper"></div>
                     <div class="song-player">
-                        <div class="song-player-time"></div>
+                        <div class="song-player-time">0:00 / 0:00</div>
                         <div class="song-player-progress-bar">
                             <div class="song-player-progress-bar-fill"></div>
                         </div>
                         <div class="song-player-controls">
+                            <button id="prev-button">
+                                <i class="fas fa-backward"></i>
+                            </button>
                             <button id="play-pause-button">
                                 <i class="fas fa-pause"></i>
+                            </button>
+                            <button id="next-button">
+                                <i class="fas fa-forward"></i>
                             </button>
                         </div>
                     </div>
@@ -69,7 +96,7 @@
                         </div>
                     </div>
                     <br>
-                    <div class="social-button" data-url="https://snapchat.com/add/user57320948612">
+                    <div class="social-button" data-url="https://snapchat.com/add/kittymeowwwlol">
                         <img src="./images/snapchat.svg" alt="snapchat" class="social-icon">
                         <div class="social-content">
                             <span class="social-text">Snapchat</span>
@@ -96,6 +123,7 @@
         </div>
     </div>
     <audio id="musicplayer" src="", type="audio/mpeg"></audio>
+    <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool" type="text/javascript"></script>
     <script src="./js/script.js"></script>
     <script src="./js/disablerightclick.js"></script>
 </body>
