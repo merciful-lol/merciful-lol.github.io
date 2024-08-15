@@ -10,9 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/snowflake.css">
-    <link rel="stylesheet" href="./css/button.css">
-    <link rel="stylesheet" href="./css/music.css">
     <link rel="icon" href="./images/icon.gif" type="image/gif">
     <link rel="apple-touch-icon" href="./images/icon.gif">
     <meta property="og:image" content="./images/logo.png">
@@ -46,8 +43,26 @@
                         <span class="cursor"> |</span>
                     </div>
                     <div class="border-wrapper"></div>
+                    <div class="social-icons">
+                        <button class="telegram" onclick="window.open('https://t.me/showmercy', '_blank')">
+                            <img src="../images/telegram.svg" class="telegram" alt="Telegram">
+                        </button>
+                        <button class="tiktok" onclick="window.open('https://tiktok.com/@centimeter', '_blank')">
+                            <img src="../images/tiktok.svg" class="tiktok" alt="TikTok">
+                        </button>
+                        <button onclick="window.open('https://instagram.com/eysxia', '_blank')">
+                            <img src="../images/instagram.svg" alt="Instagram">
+                        </button>
+                        <button onclick="window.open('https://discord.com/users/1246907689620213882', '_blank')">
+                            <img src="../images/discord.svg" alt="Discord">
+                        </button>
+                        <button class="snapchat" onclick="window.open('https://snapchat.com/add/kittymeowwwlol', '_blank')">
+                            <img src="../images/snapchat.svg" class="snapchat" alt="Snapchat">
+                        </button>
+                    </div>
+                    <div class="border-wrapper"></div>
                     <div class="song-player">
-                        <div class="song-player-time">0:00 / 0:00</div>
+                        <div class="song-player-time">Loading...</div>
                         <div class="song-player-progress-bar">
                             <div class="song-player-progress-bar-fill"></div>
                         </div>
@@ -56,51 +71,11 @@
                                 <i class="fas fa-backward"></i>
                             </button>
                             <button id="play-pause-button">
-                                <i class="fas fa-pause"></i>
+                                <i class="fas fa-play"></i>
                             </button>
                             <button id="next-button">
                                 <i class="fas fa-forward"></i>
                             </button>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="social-button" data-url="https://t.me/showmercy">
-                        <img src="./images/telegram.svg" alt="telegram" class="social-icon">
-                        <div class="social-content">
-                            <span class="social-text">Telegram</span>
-                            <img src="./images/arrow.svg" alt="Arrow Icon" class="social-arrow-icon">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="social-button" data-url="https://tiktok.com/@centimeter">
-                        <img src="./images/tiktok.svg" alt="tiktok" class="social-icon">
-                        <div class="social-content">
-                            <span class="social-text">Tiktok</span>
-                            <img src="./images/arrow.svg" alt="Arrow Icon" class="social-arrow-icon">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="social-button" data-url="https://instagram.com/eysxia">
-                        <img src="./images/instagram.svg" alt="instagram" class="social-icon">
-                        <div class="social-content">
-                            <span class="social-text">Instagram</span>
-                            <img src="./images/arrow.svg" alt="Arrow Icon" class="social-arrow-icon">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="social-button" data-url="https://discord.com/users/1246907689620213882">
-                        <img src="./images/discord.svg" alt="discord" class="social-icon">
-                        <div class="social-content">
-                            <span class="social-text">Discord</span>
-                            <img src="./images/arrow.svg" alt="Arrow Icon" class="social-arrow-icon">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="social-button" data-url="https://snapchat.com/add/kittymeowwwlol">
-                        <img src="./images/snapchat.svg" alt="snapchat" class="social-icon">
-                        <div class="social-content">
-                            <span class="social-text">Snapchat</span>
-                            <img src="./images/arrow.svg" alt="Arrow Icon" class="social-arrow-icon">
                         </div>
                     </div>
                 </div>
@@ -124,6 +99,5 @@
     </div>
     <audio id="musicplayer" src="", type="audio/mpeg"></audio>
     <script src="./js/script.js"></script>
-    <script src="./js/disablerightclick.js"></script>
 </body>
 </html>
